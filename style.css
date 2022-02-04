@@ -1,0 +1,212 @@
+* {
+	font-family: "Big Shoulders Display", cursive;
+	font-family: "Lexend Deca", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	/* ### Primary */
+
+	--Brightorange: hsl(31, 77%, 52%);
+	--Darkcyan: hsl(184, 100%, 22%);
+	--Verydarkcyan: hsl(179, 100%, 13%);
+
+	/* ### Neutral */
+
+	/* (paragraphs) */
+	--Transparentwhite: hsla(0, 0%, 100%, 0.75);
+
+	/* (background, headings, buttons) */
+	--Verylightgray: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 1024px) {
+	body {
+		background-color: var(--Verylightgray);
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		max-width: 60%;
+		min-height: 60%;
+		max-height: 60vh;
+		border-radius: 10px;
+		flex: 1;
+	}
+	.container img {
+		max-width: 30%;
+		max-height: 30%;
+	}
+	.sedan {
+		background-color: var(--Brightorange);
+		padding: 5%;
+		border-radius: 10px 0 0 10px;
+	}
+	.suv {
+		background-color: var(--Darkcyan);
+		padding: 5%;
+	}
+	.luxury {
+		background-color: var(--Verydarkcyan);
+		padding: 5%;
+		border-radius: 0 10px 10px 0;
+	}
+
+	h2 {
+		font-family: "Big Shoulders Display";
+		text-transform: uppercase;
+		color: var(--Verylightgray);
+		font-weight: 700;
+		font-size: 5vh;
+		margin: 15% 0;
+		display: flex;
+	}
+	p {
+		flex: 1;
+		font-family: "Lexend Deca";
+		color: var(--Transparentwhite);
+		font-size: 1.66667vh;
+		line-height: 2em;
+	}
+	/* buttons */
+	.container a {
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+		text-decoration: none;
+		background-color: var(--Verylightgray);
+		padding: 1.5vh 1vw;
+		border-radius: 30px;
+		font-size: 1.7vh;
+		min-width: 50%;
+		max-width: 80%;
+	}
+	.button {
+		display: flex;
+		flex-direction: column;
+	}
+	#a-sed {
+		color: var(--Brightorange);
+	}
+	#a-sed:hover {
+		background-color: var(--Brightorange);
+		color: var(--Verylightgray);
+		border: 2px solid var(--Verylightgray);
+	}
+	#a-lux {
+		color: var(--Verydarkcyan);
+	}
+	#a-lux:hover {
+		background-color: var(--Verydarkcyan);
+		color: var(--Verylightgray);
+		border: 2px solid var(--Verylightgray);
+	}
+	#a-suv {
+		color: var(--Darkcyan);
+	}
+	#a-suv:hover {
+		background-color: var(--Darkcyan);
+		color: var(--Verylightgray);
+		border: 2px solid var(--Verylightgray);
+	}
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	body {
+		position: relative;
+		background-color: var(--Verylightgray);
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container {
+		margin-top: 5%;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		max-width: 90%;
+		/* min-height: 90%; */
+		border-radius: 10px;
+		flex: 1;
+	}
+	.container img {
+		max-width: 25%;
+		max-height: 25%;
+	}
+	p {
+		flex: 1;
+		font-family: "Lexend Deca";
+		color: var(--Transparentwhite);
+		font-size: 15px;
+		line-height: 2em;
+		padding-bottom: 10%;
+	}
+	h2 {
+		font-family: "Big Shoulders Display";
+		text-transform: uppercase;
+		color: var(--Verylightgray);
+		font-weight: 700;
+		font-size: 2.5em;
+		padding: 10% 0;
+		display: flex;
+	}
+	.sedan {
+		background-color: var(--Brightorange);
+		padding: 10%;
+		border-radius: 10px 10px 0 0;
+	}
+	.suv {
+		background-color: var(--Darkcyan);
+		padding: 10%;
+	}
+	.luxury {
+		background-color: var(--Verydarkcyan);
+		padding: 10%;
+		border-radius: 0 0 10px 10px;
+	}
+	/* buttons */
+	.container a {
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+		text-decoration: none;
+		background-color: var(--Verylightgray);
+		padding: 1.5vh 1vw;
+		border-radius: 30px;
+		font-size: 16px;
+		min-width: 50%;
+		max-width: 60%;
+	}
+	.button {
+		display: flex;
+		flex-direction: column;
+	}
+	#a-sed {
+		color: var(--Brightorange);
+	}
+	#a-lux {
+		color: var(--Verydarkcyan);
+	}
+	#a-suv {
+		color: var(--Darkcyan);
+	}
+
+	footer {
+		position: absolute;
+		bottom: -5%;
+	}
+}
